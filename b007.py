@@ -60,7 +60,7 @@ def validate_license_full(license_key: str):
     if not local["valid"]: return local
     try:
         key_hash = hashlib.sha256(license_key.encode()).hexdigest()
-        resp = requests.post("https://your-admin.onrender.com/api/validate",
+        resp = requests.post("https://b007.onrender.com/api/validate",
                            json={'key_hash': key_hash, 'machine_id': get_machine_id()}, timeout=10)
         if resp.json().get('valid') is False:
             return {"valid": False, "reason": "REVOKED"}
@@ -117,4 +117,5 @@ if __name__ == "__main__":
         exit(1)
     root = tk.Tk()
     app = B007App(root)
+
     root.mainloop()
