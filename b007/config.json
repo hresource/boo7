@@ -1,0 +1,16 @@
+{
+  "apiKeys": {
+    "api_sms_activate_ru": "your_sms_activate_key",
+    "api_vtope": "your_vtope_api",
+    "btoken_vtope": "your_vtope_btoken",
+    "kopeechka_api": "your_kopeechka_key"
+  },
+  "rotation": {
+    "rot_reg": true,
+    "rot_parsing": true
+  },
+  "settings": {
+    "number_threads": 10,
+    "lang": "EN"
+  }
+}
